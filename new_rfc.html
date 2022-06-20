@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <title>
-    RFC Tracker
+    Kaizen - RFC Management
   </title>
   <meta name="keywords" content="">
   <meta name="description" content="">
@@ -17,7 +17,10 @@
 <body>
   <div class="pad20">
     <img src="epcc.png" class="logo_size">
-    <h1 class="title">RFC Tracker</h1>
+    <center>
+    <img src="kaizen-en-thin.png" class="logo">
+    <img src="kaizen-jp.png" class="logo-right">
+  </center>
   </div>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -25,9 +28,8 @@
     <li class="right"><a href="new_rfc.html" class="blue-back">New RFC</a></li>
   </ul>
   <div class="pad20"></div>
-
   <section class="table-pad">
-    <form>
+    <form action="send.js">
       <table>
         <tr>
           <td>
@@ -217,9 +219,37 @@
           </td>
         </tr>
 
+        <tr>
+          <td>
+            <label for="communication_plan">Communication Plan</label>
+          </td>
+          <td>
+            <textarea name="communication_plan" rows=10 cols=50></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="success-fail">Success/Failure Criteria</label>
+          </td>
+          <td>
+            <textarea name="success-fail" rows=5 cols=50></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="notes">Further Notes</label>
+          </td>
+          <td>
+            <textarea name="notes" rows=5 cols=50></textarea>
+          </td>
+        </tr>
+
       </table>
       <input type="submit" value="Submit RFC">
     </form>
+
   </section>
 </body>
+
 </html>

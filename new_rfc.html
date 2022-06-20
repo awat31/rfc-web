@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <title>
+    RFC Tracker
+  </title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<html>
+
+<body>
+  <div class="pad20">
+    <img src="epcc.png" class="logo_size">
+    <h1 class="title">RFC Tracker</h1>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="all.html">All RFCs</a></li>
+    <li class="right"><a href="new_rfc.html" class="blue-back">New RFC</a></li>
+  </ul>
+  <div class="pad20"></div>
+
+  <section class="table-pad">
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label for="id">RFC ID</label>
+          </td>
+          <td>
+            <input type="number" id="id" name="id" min=0>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="title">RFC Title</label>
+          </td>
+          <td>
+            <input type="text" id="title" name="title">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="title">Requested By</label>
+          </td>
+          <td>
+            <input type="text" id="requested_by" name="requested_by">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="title">Responsible For Change</label>
+          </td>
+          <td>
+            <input type="text" id="responsible" name="responsible">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="submitted-date">Date Submitted</label>
+          </td>
+          <td>
+            <input type="date" id="submitted-date" name="submitted-date">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="due-date">Date of Change</label>
+          </td>
+          <td>
+            <input type="date" id="due-date" name="due-date">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="completed-date">Date Completed</label>
+          </td>
+          <td>
+            <input type="date" id="completed-date" name="completed-date">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="suration">Change Duration (hrs)</label>
+          </td>
+          <td>
+            <input type="number" step="0.25" id="duration" name="duration">
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <label for="change_type">Change Type</label>
+          </td>
+          <td>
+            <input type="radio" id="rfc_type" name="rfc_type" value="normal">
+            <label for="HTML">Normal</label>
+            <input type="radio" id="rfc_type" name="rfc_type" value="emergency">
+            <label for="rfc_type">Emergency</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="maintenance_type">Maintenance Type</label>
+          </td>
+          <td>
+            <input type="radio" id="maintenance_type" name="maintenance_type" value="at-risk">
+            <label for="maintenance_type">At-Risk</label>
+            <input type="radio" id="maintenance_type" name="maintenance_type" value="full-outage">
+            <label for="maintenance-type">Full-Outage</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="description">RFC Description</label> <br>
+          </td>
+          <td>
+            <textarea name="description" rows=10 cols=50></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="instructions">RFC Instructions</label>
+          </td>
+          <td>
+            <textarea name="instructions" rows=10 cols=50></textarea>
+          </td>
+        </tr>
+      </table>
+        <table>
+          <tr>
+            <th>Service Impacted</th>
+            <th>Service Manager/Deputies</th>
+            <th>Stakeholder Group</th>
+            <th>Impact-Detail</th>
+            <th>Go Ahead (Y/N)</th>
+            <th>Date of Acceptance</th>
+            <th>Accepted By</th>
+          </tr>
+          <tr>
+            <td><input type="text" id="service_impacted" name="service_impacted"></td>
+            <td><input type="text" id="service_manager" name="service_manager"></td>
+            <td><input type="text" id="stakeholders" name="staleholders"></td>
+            <td><input type="text" id="impact_details" name="impact_details"></td>
+            <td><input type="text" id="go_ahead" name="go_ahead"></td>
+            <td><input type="date" id="acceptance_date" name="acceptance_date"></td>
+            <td><input type="text" id="accepted_by" name="accepted_by"></td>
+          </tr>
+        </table>
+        <table>
+        <tr>
+          <td>
+            <label for="testing">Testing</label>
+          </td>
+          <td>
+            <input type="text" name="testing" id="testing">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="Related Queries">Related Queries</label>
+          </td>
+          <td>
+            <input type="URL" name="related_queries" id="related_queries">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="User Impact">User Impact</label>
+          </td>
+          <td>
+            <input type="text" name="user_impact" id="user_impact">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="security">Security</label>
+          </td>
+          <td>
+            <input type="text" name="security" id="security">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="ser">Service Documentation</label>
+          </td>
+          <td>
+            <input type="text" name="service_docs" id="service_docs">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="ser">User Documentation</label>
+          </td>
+          <td>
+            <input type="text" name="user_docs" id="user_docs">
+          </td>
+        </tr>
+
+      </table>
+      <input type="submit" value="Submit RFC">
+    </form>
+  </section>
+</body>
+</html>

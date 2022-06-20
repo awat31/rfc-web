@@ -1,0 +1,99 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h2{
+  padding: 20px;
+}
+
+li {
+  display: inline;
+  float: left;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(240, 156, 22);
+}
+
+p{
+  padding: 20px;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: rgb(240, 156, 22);
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: rgb(201, 123, 0);
+}
+
+.inline{
+  display: inline;
+}
+
+.logo_size{
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 15px;
+  float: left;
+}
+
+.active{
+  background: orange;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+  float: left;
+}
+
+.blue-back{
+  background-color: rgb(0, 128, 4);
+}
+
+.table_borders{
+  border: 0.5px solid grey;
+
+}
+
+
+.title {
+  text-align: center;
+}
+
+.table-pad{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.centre{
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.pad20{
+  padding: 10px;
+}

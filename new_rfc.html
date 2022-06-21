@@ -52,7 +52,7 @@
 
         <tr>
           <td>
-            <label for="title">Requested By</label>
+            <label for="requested_by">Requested By</label>
           </td>
           <td>
             <input type="text" id="requested_by" name="requested_by">
@@ -61,7 +61,7 @@
 
         <tr>
           <td>
-            <label for="title">Responsible For Change</label>
+            <label for="responsible">Responsible For Change</label>
           </td>
           <td>
             <input type="text" id="responsible" name="responsible">
@@ -70,28 +70,28 @@
 
         <tr>
           <td>
-            <label for="submitted-date">Date Submitted</label>
+            <label for="submitted_date">Date Submitted</label>
           </td>
           <td>
-            <input type="date" id="submitted-date" name="submitted-date">
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <label for="due-date">Date of Change</label>
-          </td>
-          <td>
-            <input type="date" id="due-date" name="due-date">
+            <input type="date" id="submitted_date" name="submitted_date">
           </td>
         </tr>
 
         <tr>
           <td>
-            <label for="completed-date">Date Completed</label>
+            <label for="due_date">Date of Change</label>
           </td>
           <td>
-            <input type="date" id="completed-date" name="completed-date">
+            <input type="date" id="due_date" name="due_date">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="completed_date">Date Completed</label>
+          </td>
+          <td>
+            <input type="date" id="completed_date" name="completed_date">
           </td>
         </tr>
 
@@ -150,7 +150,7 @@
       <table>
         <tr>
           <td>
-            Service Impacted
+            Services Impacted
           </td>
           <td>
             <input type="text" id="service_impacted" name="service_impacted">
@@ -173,19 +173,22 @@
           </td>
         </tr>
         <tr>
-          <td>
-            Impact-Detail
-          </td>
-          <td>
-            <input type="text" id="impact_details" name="impact_details">
-          </td>
+            <td>
+              <label for="impact_detail">Impact Detail</label>
+            </td>
+            <td>
+              <textarea name="impact_detail" rows=5 cols=50></textarea>
+            </td>
         </tr>
         <tr>
           <td>
-            Go Ahead (Y/N)
+            <label for="go_ahead">Go Ahead?</label>
           </td>
           <td>
-            <input type="text" id="go_ahead" name="go_ahead">
+            <input type="radio" id="go_ahead" name="go_ahead" value="yes">
+            <label for="go_ahead">Yes</label>
+            <input type="radio" id="go_ahead" name="go_ahead" value="no">
+            <label for="go_ahead">No</label>
           </td>
         </tr>
         <tr>
@@ -208,14 +211,6 @@
     </table>
     <h3>Recovery</h3>
     <table>
-    <tr>
-      <td>
-        <label for="testing">Testing</label>
-      </td>
-      <td>
-        <input type="text" name="testing" id="testing">
-      </td>
-    </tr>
 
     <tr>
       <td>
@@ -228,10 +223,19 @@
 
     <tr>
       <td>
-        <label for="User Impact">User Impact</label>
+        <label for="testing">Testing</label>
       </td>
       <td>
-        <input type="text" name="user_impact" id="user_impact">
+        <textarea name="testing" rows=5 cols=50></textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label for="user_impact">User Impact</label>
+      </td>
+      <td>
+        <textarea name="user_impact" rows=5 cols=50></textarea>
       </td>
     </tr>
 
@@ -240,25 +244,25 @@
         <label for="security">Security</label>
       </td>
       <td>
-        <input type="text" name="security" id="security">
+        <textarea name="security" rows=5 cols=50></textarea>
       </td>
     </tr>
 
     <tr>
       <td>
-        <label for="ser">Service Documentation</label>
+        <label for="service_docs">Service Documentation</label>
       </td>
       <td>
-        <input type="text" name="service_docs" id="service_docs">
+        <textarea name="service_docs" rows=5 cols=50></textarea>
       </td>
     </tr>
 
     <tr>
       <td>
-        <label for="ser">User Documentation</label>
+        <label for="user_docs">User Documentation</label>
       </td>
       <td>
-        <input type="text" name="user_docs" id="user_docs">
+        <textarea name="user_docs" rows=5 cols=50></textarea>
       </td>
     </tr>
 
@@ -267,15 +271,15 @@
         <label for="communication_plan">Communication Plan</label>
       </td>
       <td>
-        <textarea name="communication_plan" rows=10 cols=50></textarea>
+        <textarea name="communication_plan" rows=5 cols=50></textarea>
       </td>
     </tr>
     <tr>
       <td>
-        <label for="success-fail">Success/Failure Criteria</label>
+        <label for="success_fail">Success/Failure Criteria</label>
       </td>
       <td>
-        <textarea name="success-fail" rows=5 cols=50></textarea>
+        <textarea name="success_fail" rows=5 cols=50></textarea>
       </td>
     </tr>
 

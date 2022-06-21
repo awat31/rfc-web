@@ -54,7 +54,6 @@ li a:hover{
 input [type=button], input[type=submit] {
   background-color: rgb(240, 156, 22);
   border: none;
-  float: left;
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -65,8 +64,26 @@ input [type=button], input[type=submit] {
   margin-right: 30px;
 }
 
+input [type=button], input[type=submit2] {
+  background-color: white;
+  border: solid;
+  border-color: rgb(61, 61, 61);
+  color: rgb(61, 61, 61);
+  border-width: thin;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 4px 2px;
+  padding: 5px;
+  float: right;
+  text-align: center;
+  width: 30%;
+
+}
+
 input [type=text], [id=search] {
-  width: 40%;
+  width: 90%;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -79,10 +96,31 @@ input [type=text], [id=search] {
   padding: 12px 20px 12px 40px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-row-gap: 30px;
+  float: left;
+  width: 75%;
+  text-align: left;
+}
+
+.item1{
+  background-color: rgb(240, 156, 22);
+  grid-column-start: 1;
+  grid-column-end: 1;
+  padding-right:20px;
+  padding-top: 25px;
+  padding-left: 20px;
+  height: 100%;
+  width: auto;
+}
+
 
 .inline{
   display: inline;
 }
+
 
 .logo_size{
   height: 50px;

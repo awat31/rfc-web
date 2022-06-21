@@ -26,16 +26,33 @@
     <li><a href="all.html">All RFCs</a></li>
     <li class="right"><a href="new_rfc.html" class="blue-back">New RFC</a></li>
   </ul>
+  <section class="grid-container">
+    <section class="item1">
+    <h3>Search RFC ID</h3>
+    <form action="search.js">
+      <input type="text" name="search" id="search">
+    </form>
+
+    <h3>RFC By Status</h3>
+    <form action="status.js">
+      <input type="radio" id="status" name="status" value="Draft">
+      <label for="HTML">Draft</label><br>
+      <input type="radio" id="status" name="status" value="Pending">
+      <label for="rfc_type">Pending</label><br>
+      <input type="radio" id="status" name="status" value="Complete">
+      <label for="rfc_type">Complete</label><br>
+    </form>
+
+    <h3>Search Date Submitted</h3>
+    <form>
+
+    </form>
+
+    <input type="submit2" value="Search">
+    </section>
+  </section>
 </body>
-<h2>
-  Show All RFCs
-</h2>
-<center>
 
-  <form action="search.js">
-    <input type="text" name="search" id="search" placeholder="Search RFC Number.." />
-  </form>
 
-</center>
 </body>
 </html>

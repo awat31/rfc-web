@@ -24,16 +24,18 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="all.html">All RFCs</a></li>
+    <li><a href="settings.html">Settings</a></li>
     <li class="right"><a href="new_rfc.html" class="blue-back">New RFC</a></li>
   </ul>
   <section class="grid-container">
     <section class="item1">
-    <h3>Search RFC ID</h3>
+    <h4>Search RFCs</h4>
+    <h3>Search by RFC ID</h3>
     <form action="search.js">
       <input type="text" name="search" id="search">
     </form>
 
-    <h3>RFC By Status</h3>
+    <h3>RFC by Status</h3>
     <form action="status.js">
       <input type="radio" id="status" name="status" value="Draft">
       <label for="HTML">Draft</label><br>
@@ -45,9 +47,15 @@
 
     <h3>Search Date Submitted</h3>
     <form>
-
+      <input type="date" id="search_subitted_date" name="search_subitted_date">
     </form>
 
+    <h3>Search Assigned Handler</h3>
+    <form>
+      <input type="text" id="assigned_handler" name="assigned_handler">
+    </form>
+
+    <br>
     <input type="submit2" value="Search">
     </section>
   </section>

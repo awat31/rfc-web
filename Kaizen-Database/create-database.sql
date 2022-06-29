@@ -5,6 +5,15 @@ USE kaizen;
 
 DROP TABLE IF EXISTS services;
 DROP TABLE IF EXISTS RFC;
+DROP TABLE IF EXISTS user;
+
+CREATE TABLE users (
+  user_id INTEGER NOT NULL PRIMARY KEY,
+  user_name VARCHAR(255),
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  email VARCHAR(255)
+);
 
 CREATE TABLE services (
   service_id INTEGER NOT NULL PRIMARY KEY,
@@ -39,5 +48,7 @@ CREATE TABLE RFC (
   communication_plan TEXT(65535),
   success_fail TEXT(65535),
   notes TEXT(65535),
-  FOREIGN KEY (service_id) REFERENCES services(service_id)
+  assigned_handler INTEGER NOT NULL,
+  FOREIGN KEY (service_id) REFERENCES services(service_id),
+  FOREIGN KEY (assigned_handler) REFERENCES users(user_id)
 );

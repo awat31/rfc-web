@@ -1,9 +1,16 @@
+html{
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
 body{
   font-family: 'Raleway', sans-serif;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 100px;
+  margin: 0px;
   color: rgb(3, 0, 33);
+  height: 100%;
+  padding-top: 0px;
+
 }
 
 h2{
@@ -105,22 +112,33 @@ input [type=text], [id=search] {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 30% auto;
-  grid-row-gap: 30px;
-  float: left;
-  width: 75%;
-  text-align: left;
+  grid-template-columns: 25% auto;
+  grid-template-rows: auto;
+  height: 100%;
 }
 
 .item1{
   background-color: rgb(240, 156, 22);
   grid-column-start: 1;
   grid-column-end: 1;
+  grid-row: 1;
   padding-right:20px;
   padding-top: 25px;
   padding-left: 20px;
-  height: 100%;
   width: auto;
+  float: left;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+
+}
+
+.item2{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  text-align: center;
+  height: 100%;
 }
 
 .padding-left{
@@ -207,5 +225,6 @@ input [type=text], [id=search] {
 }
 
 .pad20{
-  padding: 10px;
+  padding: 1px;
+  
 }
